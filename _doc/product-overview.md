@@ -65,4 +65,15 @@ Polished and visual for buyers; efficient and data-clear for developers and sale
 Core truth defined from the initial brief. Day-one priority confirmed: the **interactive
 listings → instant lead capture** loop (browse a unit, inquire or book a viewing on the
 spot, routed to an agent before interest cools) — everything else orbits this. Product
-name confirmed: **Festa**. Initial app build not yet triggered.
+name confirmed: **Festa**.
+
+**Initial app build: DONE — Festa is live.** The shipped MVP delivers the core loop:
+buyers browse projects and units (detailed specs, floor plans, image galleries) and an
+interactive site plan with available / reserved / sold status, then inquire or book a
+site visit that routes to an agent via WhatsApp. Also shipped: saved favorites with
+customer accounts, a financing/mortgage calculator, payment-scheme display, and an admin
+suite (lead management, an analytics overview anchored on the qualified-leads north star,
+and full project/unit management with image uploads).
+
+Next-feature candidates staged (not yet built): instant agent lead alerts + routing,
+in-app financing pre-qualification, and a promotions / featured-project campaign manager.
