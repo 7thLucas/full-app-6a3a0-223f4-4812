@@ -1,0 +1,35 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <style>
+    .mode-landscape .sl-cover { flex-direction: row; }
+    .mode-portrait .sl-cover { flex-direction: column; }
+    .mode-portrait .sl-visual { width: 100%; min-height: 40%; }
+    .mode-landscape .sl-visual { width: 44%; }
+    .mode-landscape .sl-content { width: 56%; }
+  </style>
+  <div class="sl-cover flex w-full h-full">
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2.5 h-2.5 rounded-full" style="background:#0F766E"></span>
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase" style="color:#0F766E">Property Sales Platform</span>
+      </div>
+      <div>
+        <h1 class="text-slate-900 font-extrabold leading-[1.05]" style="font-size:3.4rem; letter-spacing:-0.02em">
+          From <span style="color:#0F766E">showing</span><br/>to <span style="color:#0F766E">selling</span>.
+        </h1>
+        <p class="mt-6 text-slate-600 text-xl leading-relaxed max-w-xl">
+          One platform for developers to showcase projects beautifully, capture buyer
+          intent the moment it peaks, and turn it into qualified leads and booked visits.
+        </p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <data-attribution />
+      </div>
+    </div>
+    <div class="sl-visual relative overflow-hidden">
+      <img class="absolute inset-0 w-full h-full object-cover"
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern%20luxury%20residential%20property%20development%20architecture%20at%20golden%20hour%2C%20elegant%20glass%20and%20stone%20facade%2C%20landscaped%20grounds%2C%20premium%20real%20estate%20editorial%20photography"
+        alt="Premium property development" />
+      <div class="absolute inset-0" style="background:linear-gradient(120deg, rgba(15,118,110,0.25), rgba(0,0,0,0.05))"></div>
+    </div>
+  </div>
+</section>
