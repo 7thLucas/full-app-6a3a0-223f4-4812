@@ -2,6 +2,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { readdir } from "node:fs/promises";
 import { createLogger } from "~/lib/logger";
+import { seedFesta } from "~/api/festa";
 
 const logger = createLogger("Seed");
 
@@ -101,6 +102,13 @@ export async function runSeeds(): Promise<void> {
       logger.info(`Running seed ${seed.exportName} from ${path.relative(process.cwd(), seed.filePath)}`);
       await seed.run();
     }
+
+    // Festa lives outside app/modules/* (it is an app/api/festa domain), so it
+    // is not picked up by module discovery. Run it explicitly here — this path
+    // only executes after the MongoDB connection is ready (server.ts), avoiding
+    // the buffering-timeout race that occurred when it was seeded at import time.
+    logger.info("Running Festa domain seed");
+    await seedFesta();
 
     logger.info("✅ All seed operations completed successfully");
   } catch (error) {

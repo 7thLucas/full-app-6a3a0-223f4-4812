@@ -21,6 +21,20 @@ export default defineConfig({
       },
     ],
   },
+  optimizeDeps: {
+    // Pre-bundle commonly-used client deps so Vite doesn't discover them
+    // mid-session and trigger a full-page reload. Without this, the dev server
+    // optimizes these on first request and forces a reload, which (with polling
+    // + HMR) can cascade into a continuous reload loop that leaves the preview
+    // iframe blank.
+    include: [
+      "next-themes",
+      "lucide-react",
+      "clsx",
+      "tailwind-merge",
+      "axios",
+    ],
+  },
   ssr: {
     noExternal: [
       // "@radix-ui",
