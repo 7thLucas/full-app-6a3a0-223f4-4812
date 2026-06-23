@@ -35,15 +35,11 @@ function ErrorReporter({ error }: { error: any }) {
 export function ErrorBoundary() {
   const error = useRouteError();
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const key = "__qb_error_reloads";
-    const count = parseInt(sessionStorage.getItem(key) || "0", 10);
-    if (count < 2) {
-      sessionStorage.setItem(key, String(count + 1));
-      window.location.reload();
-    }
-  }, []);
+  // NOTE: Do NOT auto-reload here via window.location.reload(). In a sandboxed
+  // preview iframe, sessionStorage can be partitioned/cleared, so the reload
+  // counter never persists — every error reload starts from count 0 and reloads
+  // again, producing an infinite reload loop that leaves the preview blank.
+  // Render the recoverable error UI instead and let the user / HMR recover.
 
   return (
     <html lang="en" suppressHydrationWarning>
