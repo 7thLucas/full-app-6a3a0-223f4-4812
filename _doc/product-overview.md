@@ -1,8 +1,8 @@
 # Product Overview
 
 ## Name
-**Vesta** — clean and premium, evoking home and hearth; reads well across web, mobile,
-and a developer's marketing materials.
+**Festa** — clean and premium; reads well across web, mobile, and a developer's
+marketing materials.
 
 ## What it is
 A mobile and web platform that lets property developers showcase their projects and
