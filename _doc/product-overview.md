@@ -58,5 +58,7 @@ Premium, professional, and trustworthy — real estate is a high-consideration p
 Polished and visual for buyers; efficient and data-clear for developers and sales teams.
 
 ## Status
-Core truth defined from the initial brief. Product name not yet decided. Initial app
-build not yet triggered.
+Core truth defined from the initial brief. Day-one priority confirmed: the **interactive
+listings → instant lead capture** loop (browse a unit, inquire or book a viewing on the
+spot, routed to an agent before interest cools) — everything else orbits this. Product
+name not yet decided. Initial app build not yet triggered.
