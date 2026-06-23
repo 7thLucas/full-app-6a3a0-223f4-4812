@@ -1,0 +1,39 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <style>
+    .mode-landscape .sl-found { flex-direction: row; }
+    .mode-portrait .sl-found { flex-direction: column; }
+    .mode-landscape .sl-text { width: 60%; }
+    .mode-landscape .sl-img { width: 40%; }
+    .mode-portrait .sl-img { width: 100%; min-height: 30%; }
+  </style>
+  <div class="sl-found flex w-full h-full">
+    <div class="sl-text flex flex-col justify-center p-12 gap-8">
+      <span class="text-xs font-semibold tracking-[0.2em] uppercase" style="color:#0F766E">The Foundation</span>
+      <div class="flex flex-col gap-6">
+        <div class="border-l-4 pl-5" style="border-color:#DC2626">
+          <h2 class="text-slate-900 text-2xl font-bold mb-2">The Problem</h2>
+          <p class="text-slate-600 text-lg leading-relaxed max-w-2xl">
+            Developers lose deals in the gap between buyer interest and sales follow-up.
+            Property details live in PDFs, printed brochures, and cold WhatsApp threads;
+            hot leads go stale over a weekend; and no one can see which projects, units,
+            or channels actually convert.
+          </p>
+        </div>
+        <div class="border-l-4 pl-5" style="border-color:#0F766E">
+          <h2 class="text-slate-900 text-2xl font-bold mb-2">The Solution</h2>
+          <p class="text-slate-600 text-lg leading-relaxed max-w-2xl">
+            One centralized sales engine. Showcase projects and units with rich media and
+            interactive site plans, capture buyer intent at the moment of interest, route
+            qualified leads to the right agent instantly, and give developers a clear view
+            of what's converting — from discovery to booking.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sl-img relative overflow-hidden">
+      <img class="absolute inset-0 w-full h-full object-cover"
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=real%20estate%20sales%20professional%20presenting%20interactive%20property%20site%20plan%20on%20tablet%2C%20modern%20showroom%2C%20warm%20professional%20lighting%2C%20clean%20premium%20aesthetic"
+        alt="Sales team with interactive platform" />
+    </div>
+  </div>
+</section>
